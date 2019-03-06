@@ -10,8 +10,6 @@ npm install -g project.config.utils
 
 ## Usage
 
-Initialize the project files
-
 ```bash
-$ project.config.utils --init
+$ project.config.utils
 ```

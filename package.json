@@ -30,7 +30,8 @@
     "jest": "^24.1.0"
   },
   "dependencies": {
-    "meow": "^5.0.0",
-    "request": "latest"
+    "inquirer": "^6.2.2",
+    "request": "latest",
+    "update-notifier": "^2.5.0"
   }
 }
