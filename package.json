@@ -1,6 +1,6 @@
 {
   "name": "project.config.utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utils for projects configuration",
   "main": "cli.js",
   "bin": {
