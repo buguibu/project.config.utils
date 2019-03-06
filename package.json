@@ -1,0 +1,36 @@
+{
+  "name": "project.config.utils",
+  "version": "1.0.0",
+  "description": "Utils for projects configuration",
+  "main": "cli.js",
+  "bin": {
+    "project.config.utils": "cli.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raulanatol/project.config.utils.git"
+  },
+  "keywords": [
+    "utils",
+    "linters",
+    "editorconfig",
+    "tslint"
+  ],
+  "author": "raulanatol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raulanatol/project.config.utils/issues"
+  },
+  "homepage": "https://github.com/raulanatol/project.config.utils#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "jest": "^24.1.0"
+  },
+  "dependencies": {
+    "meow": "^5.0.0",
+    "request": "latest"
+  }
+}
