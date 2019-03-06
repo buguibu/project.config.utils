@@ -12,6 +12,10 @@ const ConfigFiles = {
   editorconfig: {
     filename: '.editorconfig',
     url: 'https://gist.githubusercontent.com/raulanatol/6b34329356417d805d06ca421bd40a18/raw/80839c9bf56c753d71a9d77e5e3495e47dc9b06f/.editorconfig',
+  },
+  swiftlint: {
+    filename: '.swiftlint.yml',
+    url: 'https://gist.githubusercontent.com/raulanatol/86f0b59ca97571a25a791efcf112fdb8/raw/4f334f1adfe0e16267645544980ea018709e6b92/.swiftlint.yml'
   }
 };
 
@@ -25,12 +29,24 @@ async function typescript() {
   console.log('** Files updated!');
 }
 
+async function swift() {
+  console.log('** Start init!');
+  await Promise.all([
+    utils.download(ConfigFiles.swiftlint),
+    utils.download(ConfigFiles.editorconfig)
+  ]);
+  console.log('** Files updated!');
+}
+
 function updateLinters(kind) {
   if (kind === 'typescript') {
     return typescript();
-  } else {
-    console.log('Not implemented', kind);
   }
+
+  if (kind === 'swift') {
+    return swift();
+  }
+  console.log('Not implemented', kind);
 }
 
 module.exports = {
