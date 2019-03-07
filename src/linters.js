@@ -16,6 +16,10 @@ const ConfigFiles = {
   swiftlint: {
     filename: '.swiftlint.yml',
     url: 'https://gist.githubusercontent.com/raulanatol/86f0b59ca97571a25a791efcf112fdb8/raw/4f334f1adfe0e16267645544980ea018709e6b92/.swiftlint.yml'
+  },
+  swiftunused: {
+    filename: 'find_unused_swift_source.rb',
+    url: 'https://gist.githubusercontent.com/buguibu/a0847d9d589c659872f51a39bd604fe1/raw/d42c68cf09d7af9d532c6699dd110b50f246d856/find_unused_swift_source.rb'
   }
 };
 
@@ -33,7 +37,7 @@ async function swift() {
   console.log('** Start init!');
   await Promise.all([
     utils.download(ConfigFiles.swiftlint),
-    utils.download(ConfigFiles.editorconfig)
+    utils.download(ConfigFiles.swiftunused)
   ]);
   console.log('** Files updated!');
 }
